@@ -1,0 +1,59 @@
+<!doctype html>
+	<html>
+		<head>
+			<title>jQuery</title>
+			<script src="jquery.min.js">
+				
+
+			</script>
+			<style type="text/css">
+
+				#circle{
+					width:150px;
+					height: 150px;
+					border-radius: 50%;
+					background-color: green;
+				}
+				.square{
+					width:150px;
+					height: 150px;
+					margin: 10px;
+					background-color: red;
+				}
+
+
+			</style>
+		</head>
+		
+		<body>
+			<div id="circle"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+
+			<p>Hi mal</p>
+			<iframe src="webpage-style.html"></iframe>
+
+			<script type="text/javascript">
+				if (typeof jQuery == "undefined"){
+					//alert("jQuery is not installed")
+				} else {
+					//alert("jQuery is  installed Correctly")
+				}
+				$("#circle").click(function(){
+				//$("#circle").hover(function(){
+					//alert($("body").css("width"));
+					$("p").html("This is a change");
+					$("#circle").css("width","400px");
+					$("#circle").css("background-color","red")
+					//alert($("p").html());
+					$("iframe").attr("src","www.google.com")
+					if($(this).attr("id")=="circle"){
+						//alert("You clicked on a circle");
+						$(this).fadeOut("slow", function(){
+							alert("fadeOut completed");
+						});
+					}
+				});
+			</script>
+		</body>
+	</html>

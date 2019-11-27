@@ -1,0 +1,156 @@
+<!doctype html>
+	<html>
+		<head>
+			<title></title>
+			<link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
+			<style type="text/css">
+				body{
+					margin:0;
+					padding:0;
+					font-famiy: helvetival, arial, sans-serif;
+				}
+				#topbar{
+					margin:0 auto;
+					width:1150px;
+					height:40px;
+					
+				}
+				#logo{
+					margin-top:8px;
+					width:90px;
+					float:left;
+					margin-right:8px;
+				}
+				.topbar-section{
+					float:left;
+					border-left: 1px #666666 solid;
+					height:40px;
+				}
+				#signinimage{
+					width:25px;
+					margin:8px 10px;	
+					float:left;
+				}
+				#signintext{
+					font-weight:bold;
+					font-size:90%;
+					position:relative;
+					top:13px;
+					padding-right:50px;
+				}
+				.topbarmenu{
+					font-weight:bold;
+					font-size:90%;
+					padding: 13px 15px 0px 15px;
+					height: 23px;
+				}
+				#searchbox{
+					background-color:#E4E4E4;
+					border:none;
+					font-weight:bold;
+					font-size:14px;
+					padding:5px;
+					margin:5px 0px 5px 5px ;
+					float:left;
+				}
+				#search{
+					height:27px;
+					margin-top:5px;
+				}
+				.searcher{
+					height:35px;	
+				}
+				#icon{
+					margin-left:50px;
+				}
+				.clear{
+					clear:both;
+				}
+				#menubarcont{
+					background-color:red;
+					width:100%;
+					height:70px;
+					border-top: 1px #666666  solid;
+				}
+				#menubar{
+					margin:0 auto;
+					width:1000px;
+				}
+				h1{
+					padding:0px;
+					margin:0px;
+					font-size: 200%;
+					color: white;
+					font-weight:normal;
+					padding-top:10px;
+					float:left;
+					
+				}
+				#localnews{
+					
+					color:white;
+					position: relative;
+					top:20px;
+					float:right;
+
+				}
+				#localnews a{
+					border:1px #BB4545 solid;
+					margin: 2px 3px;
+					padding: 2px 3px;
+					color:white;
+					text-decoration: none;
+					font-size:20px;
+					
+				}
+			</style>
+		</head>
+		
+		<body>
+			<div id="topbar">
+				<img id="logo" src="image/bbclogo.png" >
+				<div id="signin" class="topbar-section">
+					<img id="signinimage" src="image/bbcprofile.png" >
+					<span id="signintext"> Sign in</span>
+				</div>
+				<div class="topbar-section topbarmenu">
+					News
+				</div>
+				<div class="topbar-section topbarmenu">
+					Sports
+				</div>
+				<div class="topbar-section topbarmenu">
+					Reel
+				</div>
+				<div class="topbar-section topbarmenu">
+					Worklife
+				</div>
+				<div class="topbar-section topbarmenu">
+					Travel
+				</div>
+				<div class="topbar-section topbarmenu">
+					Future
+				</div>
+				<div class="topbar-section topbarmenu">
+					Culture
+				</div>
+				<div class="topbar-section topbarmenu">
+					More
+					<img id="icon" src="image/downicon.png" >
+				</div>
+				<div class="topbar-section searcher">
+					<input id="searchbox" type="text" placeholder="Search" >
+					<input id="search" type="image" src="image/search.png" >
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div id="menubarcont">
+				<div id="menubar">
+					<h1>NEWS</h1>
+					<div id="localnews">
+						<a href="">Find Local News</a>
+					</div>
+				</div>
+			</div>
+		</body>
+	</html>
